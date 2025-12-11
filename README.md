@@ -11,7 +11,7 @@ Personal website hosting my resume and certificates.
 A GitHub Actions workflow has been configured to automatically deploy this site to GitHub Pages. To complete the setup:
 
 1. **Enable GitHub Pages in Repository Settings:**
-   - Go to your repository settings: https://github.com/Dreamy-San/Dreamy-San.github.-io/settings/pages
+   - Go to your repository settings: https://github.com/Dreamy-San/Dreamy-San.github.io/settings/pages
    - Under "Build and deployment", set **Source** to **GitHub Actions**
    - Save the settings
 
