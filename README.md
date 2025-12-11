@@ -3,7 +3,7 @@
 Personal website hosting my resume and certificates.
 
 ## 🔗 Links
-- **LinkedIn**: [linkedin.com/in/micah-scott-jr](http://linkedin.com/in/micah-scott-jr)
+- **LinkedIn**: [linkedin.com/in/micah-scott-jr](https://linkedin.com/in/micah-scott-jr)
 - **GitHub**: [github.com/Dreamy-San](https://github.com/Dreamy-San)
 
 ## 📄 Adding Your Resume and Certificates
