@@ -97,23 +97,54 @@
             padding: 30px;
             border-radius: 8px;
             text-align: center;
-            min-height: 200px;
+            min-height: 100px; /* Adjusted min-height */
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
         }
         
-        .document-area p {
-            color: #666;
+        /* New styles for the download links */
+        .document-area a.download-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+            padding: 12px 25px;
+            background: #764ba2; /* Darker color from the gradient */
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
             font-size: 1.1em;
-            margin-bottom: 15px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(118, 75, 162, 0.4);
+        }
+
+        .document-area a.download-link:hover {
+            background: #5a3a7c; /* Darken on hover */
+            transform: translateY(-1px);
         }
         
-        .upload-info {
-            color: #999;
-            font-size: 0.9em;
-            font-style: italic;
+        .document-area a.download-link svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor; /* Use the link color */
+        }
+        
+        /* Specific layout for the certificates list */
+        .document-area.certificate-list {
+            flex-direction: column;
+            align-items: flex-start; /* Align links to the left */
+        }
+
+        .document-area.certificate-list a.download-link {
+            width: 100%;
+            justify-content: flex-start;
+        }
+
+        .document-area p, .document-area .upload-info {
+            display: none; /* Hide original placeholder text */
         }
         
         footer {
@@ -151,16 +182,24 @@
             <div class="section">
                 <h2>Resume</h2>
                 <div class="document-area">
-                    <p>📄 Resume document will be displayed here</p>
-                    <span class="upload-info">Place your resume file in the repository</span>
+                    <a href="https://raw.githubusercontent.com/Dreamy-San/Dreamy-San.github.-io/main/resume.pdf" download="Micah_Scott_Jr_Resume.pdf" class="download-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M16 11h-4V4h-2v7H6l5 5 5-5zM4 20h16v-2H4v2z"/></svg>
+                        Download Resume (PDF)
+                    </a>
                 </div>
             </div>
             
             <div class="section">
                 <h2>Certificates</h2>
-                <div class="document-area">
-                    <p>🎓 Certificates will be displayed here</p>
-                    <span class="upload-info">Place your certificate files in the repository</span>
+                <div class="document-area certificate-list">
+                    <a href="https://raw.githubusercontent.com/Dreamy-San/Dreamy-San.github.-io/main/certificates/IBM%20iOS%20and%20Android.pdf" download="IBM_iOS_and_Android_Certificate.pdf" class="download-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M16 11h-4V4h-2v7H6l5 5 5-5zM4 20h16v-2H4v2z"/></svg>
+                        IBM iOS and Android Development Certificate (PDF)
+                    </a>
+                    <a href="https://raw.githubusercontent.com/Dreamy-San/Dreamy-San.github.-io/main/certificates/Meta%20iOS.pdf" download="Meta_iOS_Certificate.pdf" class="download-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M16 11h-4V4h-2v7H6l5 5 5-5zM4 20h16v-2H4v2z"/></svg>
+                        Meta iOS Development Certificate (PDF)
+                    </a>
                 </div>
             </div>
         </div>
